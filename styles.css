@@ -11,19 +11,27 @@ body{
     height: 100vh;
     overflow: hidden;
 }
+.buttonName{
+    margin-right: 30%;
+}
 #expanded button{
+    display: flex;
+    justify-content: space-between;
     height: 50px;
     width: 300px;
-    color: darkgrey;
-    background: white;
+    color: white;
+    background: deepskyblue;
     border-radius: 3px;
     border: none;
+    font-weight: 600;
 }
 #expanded button img{
-    width: 21px;
-    height: 21px;
+    margin-left: 4%;
+    width: 20px;
+    height: 15px;
+    margin-right: 3%;
 }
-.dropList{
+#expanded .dropList{
     background: url("img/listItems.png") no-repeat ;
     background-size: 99% 100%;
     color: grey;
@@ -48,6 +56,9 @@ body{
     width: 100%;
     height: 50px;
     background: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 #collapsed .dropList{
     display:none
