@@ -7,7 +7,7 @@ body{
     background: black;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 10%;
     height: 100vh;
     overflow: hidden;
 }
@@ -86,19 +86,24 @@ body{
     height: 50px;
 
 }
+
 .collapsed .dropList{
     display:none
 }
+
 .collapsed button{
+    display: flex;
+    justify-content: space-between;
     height: 50px;
     width: 300px;
-    color: darkgrey;
-    background: white;
+    color: grey;
     border-radius: 3px;
     border: none;
+    font-weight: 600;
 }
 .collapsed button img{
-    width: 21px;
-    height: 21px;
+    margin-left: 4%;
+    width: 20px;
+    height: 15px;
+    margin-right: 3%;
 }
-
