@@ -14,7 +14,7 @@ body{
 .buttonName{
     margin-right: 30%;
 }
-#expanded button{
+.expanded button{
     display: flex;
     justify-content: space-between;
     height: 50px;
@@ -25,13 +25,13 @@ body{
     border: none;
     font-weight: 600;
 }
-#expanded button img{
+.expanded button img{
     margin-left: 4%;
     width: 20px;
     height: 15px;
     margin-right: 3%;
 }
-#expanded .dropList{
+.expanded .dropList{
     background: url("img/listItems.png") no-repeat ;
     background-size: 99% 100%;
     color: grey;
@@ -40,30 +40,56 @@ body{
     height: 150px;
     border-radius: 3px;
 }
-#expanded div ul{
+.expanded .dropList img{
+    margin: 0 15px 0 15px;
+    height:20px;
+    width: 25px;
+}
+.expanded div ul{
     padding: 2.5% 0 0 0 ;
 }
-#expanded ul li:first-child{
+.expanded ul li:first-child{
     border-radius: 3px 3px 0 0;
     border-bottom: solid 1px lightgrey;
 }
-#expanded ul li:last-child{
+.expanded ul li:last-child{
     border-top: solid 1px lightgrey;
     border-radius: 0 0 3px 3px ;
 }
 
-#expanded ul li {
-    width: 100%;
+.expanded ul li {
+    width: 300px;
     height: 50px;
     background: white;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-#collapsed .dropList{
+
+.expanded ul li:hover{
+    background: #F6F6F6;
+}
+.expanded ul li:hover img{
+    margin-left: 10px;
+
+}
+.expanded ul li:hover:last-child:before{
+    border-radius: 0 0 0 3px;
+}
+.expanded ul li:hover:first-child:before{
+    border-radius: 3px 0 0 0;
+}
+.expanded ul li:hover:before{
+    content: "";
+    background: deepskyblue ;
+    width:5px;
+    height: 50px;
+
+}
+.collapsed .dropList{
     display:none
 }
-#collapsed button{
+.collapsed button{
     height: 50px;
     width: 300px;
     color: darkgrey;
@@ -71,7 +97,7 @@ body{
     border-radius: 3px;
     border: none;
 }
-#collapsed button img{
+.collapsed button img{
     width: 21px;
     height: 21px;
 }
