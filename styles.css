@@ -5,6 +5,11 @@ ul {
 }
 body{
     background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
 }
 #menu button{
     height: 50px;
@@ -13,7 +18,10 @@ body{
     background: white;
     border-radius: 3px;
     border: none;
-
+}
+#menu button img{
+    width: 21px;
+    height: 21px;
 }
 .dropList{
     background: url("img/listItems.png") no-repeat ;
