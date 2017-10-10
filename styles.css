@@ -11,7 +11,7 @@ body{
     height: 100vh;
     overflow: hidden;
 }
-#menu button{
+#expanded button{
     height: 50px;
     width: 300px;
     color: darkgrey;
@@ -19,7 +19,7 @@ body{
     border-radius: 3px;
     border: none;
 }
-#menu button img{
+#expanded button img{
     width: 21px;
     height: 21px;
 }
@@ -32,20 +32,36 @@ body{
     height: 150px;
     border-radius: 3px;
 }
-#menu div ul{
+#expanded div ul{
     padding: 2.5% 0 0 0 ;
 }
-#menu ul li:first-child{
+#expanded ul li:first-child{
     border-radius: 3px 3px 0 0;
     border-bottom: solid 1px lightgrey;
 }
-#menu ul li:last-child{
+#expanded ul li:last-child{
     border-top: solid 1px lightgrey;
     border-radius: 0 0 3px 3px ;
 }
 
-#menu ul li {
+#expanded ul li {
     width: 100%;
     height: 50px;
     background: white;
 }
+#collapsed .dropList{
+    display:none
+}
+#collapsed button{
+    height: 50px;
+    width: 300px;
+    color: darkgrey;
+    background: white;
+    border-radius: 3px;
+    border: none;
+}
+#collapsed button img{
+    width: 21px;
+    height: 21px;
+}
+
