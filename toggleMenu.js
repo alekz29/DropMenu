@@ -11,4 +11,3 @@ const toggleMenu = () => {
     }
     console.log(menu.classList)
 };
- 

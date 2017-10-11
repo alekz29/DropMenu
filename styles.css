@@ -14,18 +14,20 @@ body{
 .buttonName{
     margin-right: 30%;
 }
-.expanded button{
+#menu button{
     display: flex;
     justify-content: space-between;
     height: 50px;
     width: 300px;
-    color: white;
-    background: deepskyblue;
     border-radius: 3px;
     border: none;
     font-weight: 600;
 }
-.expanded button img{
+.expanded button{
+    color: white;
+    background: deepskyblue;
+}
+#menu button img{
     margin-left: 4%;
     width: 20px;
     height: 15px;
@@ -86,24 +88,11 @@ body{
     height: 50px;
 
 }
-
 .collapsed .dropList{
-    display:none
+    display:none;
 }
 
 .collapsed button{
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    width: 300px;
+    background: white;
     color: grey;
-    border-radius: 3px;
-    border: none;
-    font-weight: 600;
-}
-.collapsed button img{
-    margin-left: 4%;
-    width: 20px;
-    height: 15px;
-    margin-right: 3%;
 }
