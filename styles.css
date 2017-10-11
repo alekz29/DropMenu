@@ -1,8 +1,15 @@
+/*remove basic styles */
+
 ul {
-
     list-style-type: none;
-
 }
+*:focus {outline-style: none;}
+
+/**/
+
+
+/* general style */
+
 body{
     background: black;
     display: flex;
@@ -27,6 +34,7 @@ body{
     font-weight: 600;
     font-size: 13px;
 }
+
 .expanded button{
     color: white;
     background: deepskyblue;
@@ -34,13 +42,19 @@ body{
 #menu button img{
     margin-left: 4%;
     width: 22px;
-    height: 17px;
+    height: 16px;
     margin-right: 2%;
 }
 #arrow{
     width: 5px;
     height: 5px;
 }
+
+/**/
+
+
+/* styles for the expanded menu  */
+
 .expanded .dropList{
     background: url("img/listItems.png") no-repeat ;
     background-size: 99% 100%;
@@ -97,8 +111,13 @@ body{
     background: deepskyblue ;
     width:5px;
     height: 50px;
-
 }
+
+/**/
+
+
+/* styles for curled menu */
+
 .collapsed .dropList{
     display:none;
 }
@@ -107,6 +126,12 @@ body{
     background: white;
     color: #999999;
 }
+
+/**/
+
+
+/* click animations */
+
 .closeArrow{
     animation-name: close;
     animation-duration: 0.5s;
@@ -125,3 +150,5 @@ body{
     from{transform: rotate(180deg)}
     to{transform: rotate(0)}
 }
+
+/**/
