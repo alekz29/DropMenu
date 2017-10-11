@@ -3,14 +3,16 @@
 ul {
     list-style-type: none;
 }
-*:focus {outline-style: none;}
+
+*:focus {
+    outline-style: none;
+}
 
 /**/
 
-
 /* general style */
 
-body{
+body {
     background: black;
     display: flex;
     justify-content: center;
@@ -18,13 +20,16 @@ body{
     height: 100vh;
     overflow: hidden;
 }
-.buttonName{
+
+.buttonName {
     margin-right: 30%;
 }
-#menu{
-  height: auto
+
+#menu {
+    height: auto
 }
-#menu button{
+
+#menu button {
     display: flex;
     justify-content: space-between;
     height: 50px;
@@ -35,28 +40,29 @@ body{
     font-size: 13px;
 }
 
-.expanded button{
+.expanded button {
     color: white;
     background: deepskyblue;
 }
-#menu button img{
+
+#menu button img {
     margin-left: 4%;
     width: 22px;
     height: 16px;
     margin-right: 2%;
 }
-#arrow{
+
+#arrow {
     width: 5px;
     height: 5px;
 }
 
 /**/
 
-
 /* styles for the expanded menu  */
 
-.expanded .dropList{
-    background: url("img/listItems.png") no-repeat ;
+.expanded .dropList {
+    background: url("img/listItems.png") no-repeat;
     background-size: 99% 100%;
     color: #999999;
     font-family: Arial;
@@ -65,23 +71,30 @@ body{
     width: 300px;
     height: 150px;
     border-radius: 3px;
+    animation-name: openMenu;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
-.expanded .dropList img{
+
+.expanded .dropList img {
     margin: 0 15px 0 15px;
 
-    height:20px;
+    height: 20px;
     width: 25px;
 }
-.expanded div ul{
-    padding: 2.5% 0 0 0 ;
+
+.expanded div ul {
+    padding: 2.5% 0 0 0;
 }
-.expanded ul li:first-child{
+
+.expanded ul li:first-child {
     border-radius: 3px 3px 0 0;
     border-bottom: solid 1px lightgrey;
 }
-.expanded ul li:last-child{
+
+.expanded ul li:last-child {
     border-top: solid 1px lightgrey;
-    border-radius: 0 0 3px 3px ;
+    border-radius: 0 0 3px 3px;
 }
 
 .expanded ul li {
@@ -93,62 +106,83 @@ body{
     align-items: center;
 }
 
-.expanded ul li:hover{
+.expanded ul li:hover {
     background: #F6F6F6;
 }
-.expanded ul li:hover img{
+
+.expanded ul li:hover img {
     margin-left: 10px;
 
 }
-.expanded ul li:hover:last-child:before{
+
+.expanded ul li:hover:last-child:before {
     border-radius: 0 0 0 3px;
 }
-.expanded ul li:hover:first-child:before{
+
+.expanded ul li:hover:first-child:before {
     border-radius: 3px 0 0 0;
 }
-.expanded ul li:hover:before{
+
+.expanded ul li:hover:before {
     content: "";
-    background: deepskyblue ;
-    width:5px;
+    background: deepskyblue;
+    width: 5px;
     height: 50px;
 }
 
 /**/
 
-
 /* styles for curled menu */
 
-.collapsed .dropList{
-    display:none;
+.collapsed .dropList {
+    display: none;
 }
 
-.collapsed button{
+.collapsed button {
     background: white;
     color: #999999;
 }
 
 /**/
 
-
 /* click animations */
 
-.closeArrow{
-    animation-name: close;
+.closeArrow {
+    animation-name: closeArow;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-}
-.openArrow{
-    animation-name: open;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-}
-@keyframes open {
-    from{transform: rotate(0deg)}
-    to{transform: rotate(180deg)}
-}
-@keyframes close {
-    from{transform: rotate(180deg)}
-    to{transform: rotate(0)}
 }
 
+.openArrow {
+    animation-name: openArrow;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes openArrow {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(-180deg)
+    }
+}
+
+@keyframes closeArrow {
+    from {
+        transform: rotate(-180deg)
+    }
+    to {
+        transform: rotate(0)
+    }
+}
+
+/**/
+
+/* animation expanded menuList */
+
+@keyframes openMenu {
+    from{opacity:0}
+    to{opacity:1}
+}
 /**/
