@@ -90,11 +90,11 @@ body {
 
 .expanded ul li:first-child {
     border-radius: 3px 3px 0 0;
-    border-bottom: solid 1px lightgrey;
+    border-bottom: solid 1px #999999;
 }
 
 .expanded ul li:last-child {
-    border-top: solid 1px lightgrey;
+    border-top: solid 1px #999999;
     border-radius: 0 0 3px 3px;
 }
 
@@ -108,7 +108,7 @@ body {
 }
 
 .expanded ul li:hover {
-    background: #F6F6F6;
+    background: #F6F6F0;
 }
 
 .expanded ul li:hover img {
@@ -141,7 +141,7 @@ body {
 
 .collapsed button {
     background: white;
-    color: #999999;
+    color:#999999 ;
 }
 
 /**/
